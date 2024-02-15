@@ -31,6 +31,7 @@ public class StudentData {
     private static final String[] subjects = getRandomSubjectList();
     private static final String[] hobbies = getRandomHobbiesList();
     public static final String picture = getRandomPictureFromFolder();
+    //public static final String picture = getRandomPictureFromFolder();
     private static final String address = getRandomAddress();
     private static final String state = getRandomState();
     public static final String city = fillCitiesListAndGetRandomCity(state);

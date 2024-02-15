@@ -151,7 +151,7 @@ public class RegistrationPage {
                 setDateOfBirth(student.dayOfBirth, student.monthOfBirth, student.yearOfBirth).
                 setAllSubjects(student.subjects).
                 setHobbies(student.hobbies).
-                uploadPicture(student.picture).
+                uploadPicture("Cat.jpg").
                 setAddress(student.address).
                 setState(student.state).
                 setCity(student.city);
