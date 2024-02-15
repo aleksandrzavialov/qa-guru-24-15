@@ -10,6 +10,7 @@ import pages.components.CalendarComponent;
 
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
@@ -108,7 +109,7 @@ public class RegistrationPage {
 
     @Step("Upload picture")
     public RegistrationPage uploadPicture(String picture) {
-        pictureInput.uploadFromClasspath("img/"+picture);
+        pictureInput.uploadFromClasspath("img/" + picture);
         return this;
     }
 
@@ -142,11 +143,11 @@ public class RegistrationPage {
 
     @Step("Fill student data")
     public void fillAllStudentFields(Student student) {
-        setFirstName(student.name);
-        setLastName(student.lastName);
-        setEmail(student.email);
-        setGender(student.gender);
-        setUserNumber(student.phone).
+        setFirstName(student.name).
+                setLastName(student.lastName).
+                setEmail(student.email).
+                setGender(student.gender).
+                setUserNumber(student.phone).
                 setDateOfBirth(student.dayOfBirth, student.monthOfBirth, student.yearOfBirth).
                 setAllSubjects(student.subjects).
                 setHobbies(student.hobbies).
